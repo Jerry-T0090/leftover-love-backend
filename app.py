@@ -1,10 +1,11 @@
 from flask import Flask, request, make_response
 from flask_restful import Resource, Api
+from flask_cors import CORS
 from database import perform_db_operation
 
 app = Flask(__name__)
 api = Api(app)
-
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 class Recipient(Resource):
     
     def post(self):
