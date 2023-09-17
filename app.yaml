@@ -25,3 +25,7 @@ handlers:
     # the entire handlers section) when there are no static files defined.
   - url: /.*
     script: auto
+
+env_variables:
+  MONGODB_URI: "your_mongodb_uri_here"
+  SECRET_KEY: "your_secret_key_here"

@@ -152,4 +152,4 @@ api.add_resource(Supplier, '/supplier',
 api.add_resource(Items, '/items')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run('172.20.14.164')
